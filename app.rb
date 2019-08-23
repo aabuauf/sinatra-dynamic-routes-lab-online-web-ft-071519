@@ -20,4 +20,6 @@ class App < Sinatra::Base
     end
     "#{array}"
   end
+  
+  get 
 end
