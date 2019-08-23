@@ -1,4 +1,5 @@
 require_relative 'config/environment'
+require 'pry'
 
 class App < Sinatra::Base
   # Write your code here!
@@ -13,7 +14,7 @@ class App < Sinatra::Base
   get "/say/:number/:phrase" do
     i = 0
     while i< params[:number].to_i do
-    
+    binding.pry
      params[:phrase]
      i+=1
     end
